@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Usuario\\Documents\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj": {}
+    "C:\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj": {}
   },
   "projects": {
-    "D:\\Usuario\\Documents\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj": {
+    "C:\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Usuario\\Documents\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj",
+        "projectUniqueName": "C:\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj",
         "projectName": "FicticiaSA",
-        "projectPath": "D:\\Usuario\\Documents\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj",
+        "projectPath": "C:\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Usuario\\Documents\\BITSION\\FicticiaSA\\FicticiaSA\\obj\\",
+        "outputPath": "C:\\BITSION\\FicticiaSA\\FicticiaSA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

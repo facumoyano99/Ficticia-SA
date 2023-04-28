@@ -38,7 +38,6 @@ namespace FicticiaSA.Controllers
         }
 
         [HttpPost]
-        [Authorize]
         public async Task<ActionResult<ResponseObjectJsonDto>> CreateUser(string nombreUsuario, string password)
         {
             ResponseObjectJsonDto response = await iUsuarioServ.CreateUser(nombreUsuario, password);

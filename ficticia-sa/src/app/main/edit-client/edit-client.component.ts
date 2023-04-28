@@ -62,6 +62,7 @@ export class EditClientComponent implements OnInit {
           text: 'Cliente actualizado con éxito',
           icon: 'success',
           confirmButtonText: 'Aceptar',
+          allowOutsideClick: false,
         }).then((resp) => {
           if (resp.isConfirmed) {
             this.router.navigateByUrl('main');

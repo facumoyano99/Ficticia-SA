@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VgArF/rMIW7Z5qcVzjrgqyTkH3P6COymfi2mfxuPDb/1emE19bVyGVDCjt+bnptnDHUb8+Ljy7G3x9+N3XtWeg==",
+  "dgSpecHash": "ZZRCMFHGUyRWmfu30mI3eq33Xc879IPwhUCbOLafUJtKJ4C3iAHN1ar+CH92pX7sbHsh7lYjX5EiZYdYbLjPpw==",
   "success": true,
-  "projectFilePath": "D:\\Usuario\\Documents\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj",
+  "projectFilePath": "C:\\BITSION\\FicticiaSA\\FicticiaSA\\FicticiaSA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
