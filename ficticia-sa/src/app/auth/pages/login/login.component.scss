@@ -1,0 +1,87 @@
+.container {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.field,
+.field input {
+  width: -webkit-fill-available !important;
+  border-radius: 5px !important;
+}
+
+h2,
+.field label {
+  color: #4c6a85;
+}
+
+.bg-white {
+  background-color: rgb(255, 255, 255) !important;
+  border: gray solid 2px !important;
+  border-radius: 5px !important;
+}
+
+:host ::ng-deep {
+  .p-password {
+    width: -webkit-fill-available !important;
+    border: none !important;
+  }
+  .p-password input {
+    width: -webkit-fill-available !important;
+    height: 36.44px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255) !important;
+    border: gray solid 2px !important;
+    border-radius: 5px !important;
+  }
+  .p-inputtext:enabled:focus {
+    box-shadow: none !important;
+  }
+  .p-inputtext:enabled:hover {
+    border-color: var(--surface-border) !important;
+  }
+  .p-inputtext {
+    border-color: var(--surface-border) !important;
+  }
+  .p-inputtext:enabled:focus {
+    border-color: var(--primary-color) !important;
+  }
+  .border-round {
+    border-radius: var(--border-radius) !important;
+  }
+  @media (max-width: 600px) {
+    .p-password {
+      width: -webkit-fill-available !important;
+      border: none !important;
+    }
+    .p-password input {
+      width: -webkit-fill-available !important;
+      height: 36.44px;
+      padding: 8px;
+      background-color: antiquewhite !important;
+      border: gray solid 2px !important;
+      border-radius: 5px !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    background: rgba(58, 63, 68, 0.37);
+  }
+
+  h2,
+  .field label {
+    color: rgb(255, 238, 218);
+  }
+
+  .bg-white {
+    background-color: antiquewhite !important;
+    border: gray solid 2px !important;
+    border-radius: 5px !important;
+  }
+}

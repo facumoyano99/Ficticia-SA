@@ -1,0 +1,54 @@
+@import "primeflex/primeflex.scss";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web";
+  height: 100vh;
+  background: rgb(255, 255, 255) !important;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(185, 185, 185, 1) 100%
+  ) !important;
+}
+
+.ltBlue {
+  color: #00b8de;
+}
+
+.ltWhite {
+  color: #4c6a85;
+}
+
+.ltInputText {
+  color: #4c6a85;
+}
+
+.ltInputText:hover {
+  color: #6988a2;
+}
+
+.btn-primary {
+  background-color: #4c6a85 !important;
+  color: wheat;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 2px wheat;
+}
+
+@media (max-width: 600px) {
+  .ltWhite {
+    color: rgb(255, 238, 218);
+  }
+
+  .ltInputText {
+    color: rgb(255, 238, 218);
+  }
+  
+  .ltInputText:hover {
+    color: rgb(218, 218, 218);
+  }
+}

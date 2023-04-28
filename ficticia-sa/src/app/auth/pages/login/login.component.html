@@ -1,0 +1,37 @@
+<div
+  class="display flex justify-content-center align-items-center w-screen h-screen"
+>
+  <div class="container">
+    <h2 class="font-semibold"><i class="fa-solid fa-house-chimney-medical mr-2"></i>Ingresar</h2>
+    <form [formGroup]="loginForm">
+      <div class="field">
+        <label class="font-semibold">Usuario</label>
+        <input
+          type="text"
+          formControlName="user"
+          placeholder="Ingrese su usuario"
+          class="bg-white text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+          />
+      </div>
+      <div class="field flex flex-column">
+        <label class="font-semibold">Contraseña</label>
+        <p-password
+          (keydown)="loginWithEnter($event)"
+          type="password"
+          [toggleMask]="false"
+          [feedback]="false"
+          formControlName="password"
+          placeholder="Ingrese su contraseña"
+          class="appearance-none outline-none"
+        ></p-password>
+      </div>
+    </form>
+    <p-button
+      (onClick)="login()"
+      [disabled]="!loginForm.valid"
+      routerLinkActive="router-link-active"
+      label="ACCEDER"
+      styleClass="w-full p-2 btn-primary border-2"
+    ></p-button>
+  </div>
+</div>

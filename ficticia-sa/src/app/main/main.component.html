@@ -1,0 +1,76 @@
+<div class="grid">
+  <div class="col-12 bg_nav">
+    <div class="header">
+      <a class="logo text-rainbow-animation"
+        ><i class="fa-solid fa-house-chimney-medical mr-2"></i> Ficticia S.A</a
+      >
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li class="cursor-pointer">
+          <a *ngIf="!addUsers" (click)="addClient()">Agregar clientes</a
+          ><a *ngIf="addUsers" (click)="addClient(); this.addClients.reset()"
+            >Ver clientes</a
+          >
+        </li>
+        <li class="cursor-pointer"><a (click)="logout()">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+  <div
+    *ngIf="!addUsers"
+    class="col-12 flex justify-content-center align-content-center m-auto surface-overlay justify-content-center"
+  >
+    <p-table
+      [value]="clients"
+      [tableStyle]="{ 'min-width': '50rem' }"
+      styleClass="bg-white surface-overlay"
+    >
+      <ng-template pTemplate="header" class="surface-overlay">
+        <tr>
+          <th>Documento</th>
+          <th>Cliente</th>
+          <th>Edad</th>
+          <th>Género</th>
+          <th>Diabetes</th>
+          <th>Lentes</th>
+          <th>Maneja</th>
+          <th>Alta</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-client>
+        <tr style="text-align: center">
+          <td>{{ client.identificacion }}</td>
+          <td>{{ client.nombreCompleto }}</td>
+          <td>{{ client.edad }}</td>
+          <td>{{ client.genero }}</td>
+          <td>{{ bool(client.diabetico) }}</td>
+          <td>{{ bool(client.usaLentes) }}</td>
+          <td>{{ bool(client.maneja) }}</td>
+          <td>{{ client.fechaAlta | date : "dd-MM-yyyy" }}</td>
+          <td>{{ bool(client.esActivo) }}</td>
+          <td>
+            <button
+              title="Editar"
+              class="btnActions"
+              (click)="editClient(client.idPersona)"
+            >
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button
+              title="Dar de baja"
+              class="btnActions2"
+              (click)="deleteClient(client.idPersona)"
+            >
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
